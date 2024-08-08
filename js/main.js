@@ -37,8 +37,10 @@ window.onresize = () => {
 	if (postsContainer) setPosts();
 };
 
-const toggleCheckbox = () => {
-	termsAndConditionsCheckbox.click();
+const toggleCheckbox = (e) => {
+	e.preventDefault();
+
+	termsAndConditionsCheckbox.checked = !termsAndConditionsCheckbox.checked;
 	if (termsAndConditionsCheckbox.checked) {
 		styledCheckbox.classList.add('active');
 	} else {

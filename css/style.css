@@ -178,6 +178,9 @@ form .input-group input {
 	border-radius: 6px;
 	outline: none;
 }
+form .input-group input::placeholder {
+	padding: 1rem 0;
+}
 .styled-checkbox {
 	border: 1px solid var(--light-gray);
 	border-radius: 5px;
@@ -235,6 +238,16 @@ form button[type='submit'] {
 /* End Login Page Styling */
 
 /* Start Navbar Styling */
+.whatsapp-icon {
+	position: fixed;
+	left: 3rem;
+	bottom: 2rem;
+	background-color: #25d366;
+	padding: 1rem;
+	border-radius: 1rem;
+	z-index: 3;
+}
+
 nav > div {
 	padding: 1.5rem 7rem 1.5rem 6rem !important;
 }
@@ -521,6 +534,11 @@ footer div div:last-child p {
 }
 
 @media (max-width: 768px) {
+	.whatsapp-icon {
+		position: fixed;
+		left: 1.5rem;
+		bottom: 1.5rem;
+	}
 	.heading-title {
 		font-size: 1rem;
 	}
