@@ -168,9 +168,9 @@ const setPosts = () => {
 			<a
 							href=${post.postLink}
 							class="post-card d-flex flex-row gap-3">
-							<div class="w-50 overflow-hidden rounded-4">
+							<div class=" overflow-hidden rounded-4" style="height:170px; width:35%">
 								<img
-									height="170px"
+									height="100%"
 									width="100%"
 									src=${post.image}
 									alt="" />

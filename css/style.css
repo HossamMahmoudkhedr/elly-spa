@@ -372,6 +372,10 @@ nav ul li a {
 .products-container .product-card .product-details div p {
 	font-weight: 700;
 }
+.about-text {
+	line-height: 35.71px;
+}
+
 .main-post-container {
 	border-radius: 1.5rem;
 }
@@ -465,6 +469,12 @@ footer div div:last-child p {
 }
 /* End Home Page Styling */
 
+@media (min-width: 1400px) {
+	.container-xxl {
+		max-width: 1460px;
+	}
+}
+
 @media (max-width: 1200px) {
 	.form-container {
 		width: 100%;
@@ -518,6 +528,9 @@ footer div div:last-child p {
 	/* .post-card div:last-child div:last-child div {
 		gap: 1rem;
 	} */
+	.about-text {
+		line-height: 26px;
+	}
 	.post-card > div:first-child {
 		width: 50% !important;
 	}
