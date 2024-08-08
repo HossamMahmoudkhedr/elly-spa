@@ -472,7 +472,7 @@ footer div div:last-child p {
 		top: 0;
 		right: 0;
 		width: 100%;
-		height: 100%;
+		height: 100vh;
 		background-color: var(--bg-color);
 		z-index: 99;
 		padding: 1.5rem 2rem !important;
@@ -584,5 +584,8 @@ footer div div:last-child p {
 	.post-card div:last-child div h4,
 	.post-card div:last-child div:last-child > p {
 		font-size: 0.875rem;
+	}
+	footer > div > ul li {
+		padding: 0 0.6rem;
 	}
 }
