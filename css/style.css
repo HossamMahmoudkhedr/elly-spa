@@ -403,6 +403,9 @@ nav ul li a {
 	font-size: 1.25rem;
 	font-weight: bold;
 }
+.post-card > div:first-child {
+	width: 35% !important;
+}
 .post-card div:last-child div h4 {
 	font-weight: 700;
 	font-size: 1.25rem;
@@ -467,6 +470,7 @@ footer div div:last-child p {
 	text-align: center;
 	font-size: 0.875rem;
 }
+
 /* End Home Page Styling */
 
 @media (min-width: 1400px) {
@@ -534,6 +538,7 @@ footer div div:last-child p {
 	.post-card > div:first-child {
 		width: 50% !important;
 	}
+
 	.post-card div:first-child img {
 		height: 100%;
 	}
