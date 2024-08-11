@@ -6,6 +6,24 @@ export const productsData = [
 		image: './assets/images/first-product.png',
 		price: '1290',
 		productLink: '#',
+		productsImages: [
+			{
+				name: '',
+				link: './assets/images/first-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/first-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/first-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/first-product.png',
+			},
+		],
 	},
 	{
 		id: 2,
@@ -14,6 +32,24 @@ export const productsData = [
 		image: './assets/images/second-product.png',
 		price: '1290',
 		productLink: '#',
+		productsImages: [
+			{
+				name: '',
+				link: './assets/images/second-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/second-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/second-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/second-product.png',
+			},
+		],
 	},
 	{
 		id: 3,
@@ -22,6 +58,24 @@ export const productsData = [
 		image: './assets/images/third-product.png',
 		price: '1290',
 		productLink: '#',
+		productsImages: [
+			{
+				name: '',
+				link: './assets/images/third-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/third-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/third-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/third-product.png',
+			},
+		],
 	},
 	{
 		id: 4,
@@ -30,6 +84,24 @@ export const productsData = [
 		image: './assets/images/fourth-product.png',
 		price: '1290',
 		productLink: '#',
+		productsImages: [
+			{
+				name: '',
+				link: './assets/images/fourth-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/fourth-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/fourth-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/fourth-product.png',
+			},
+		],
 	},
 	{
 		id: 5,
@@ -38,6 +110,24 @@ export const productsData = [
 		image: './assets/images/first-product.png',
 		price: '1290',
 		productLink: '#',
+		productsImages: [
+			{
+				name: '',
+				link: './assets/images/first-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/first-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/first-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/first-product.png',
+			},
+		],
 	},
 	{
 		id: 6,
@@ -46,6 +136,24 @@ export const productsData = [
 		image: './assets/images/second-product.png',
 		price: '1290',
 		productLink: '#',
+		productsImages: [
+			{
+				name: '',
+				link: './assets/images/second-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/second-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/second-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/second-product.png',
+			},
+		],
 	},
 	{
 		id: 7,
@@ -54,6 +162,24 @@ export const productsData = [
 		image: './assets/images/third-product.png',
 		price: '1290',
 		productLink: '#',
+		productsImages: [
+			{
+				name: '',
+				link: './assets/images/third-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/third-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/third-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/third-product.png',
+			},
+		],
 	},
 	{
 		id: 8,
@@ -62,5 +188,23 @@ export const productsData = [
 		image: './assets/images/fourth-product.png',
 		price: '1290',
 		productLink: '#',
+		productsImages: [
+			{
+				name: '',
+				link: './assets/images/fourth-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/fourth-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/fourth-product.png',
+			},
+			{
+				name: '',
+				link: './assets/images/fourth-product.png',
+			},
+		],
 	},
 ];
