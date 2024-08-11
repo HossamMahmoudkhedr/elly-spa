@@ -31,6 +31,7 @@ const ProductsPageProductsContainer = document.querySelector(
 	'.all-products-container'
 );
 const typesContainer = document.querySelector('.types-form');
+const sizeBtns = document.querySelectorAll('.size-button');
 
 // Posts Elements
 const postsContainer = document.querySelector('.posts-container');
@@ -159,7 +160,7 @@ const setProducts = (container, cardsNo = 4) => {
 						<div class="product-image position-relative overflow-hidden">
 						${
 							container === ProductsPageProductsContainer
-								? `<button id=${product.id} class='favourite'><svg width="22" height="22" viewBox="0 0 22 22" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+								? `<button id=${product.id} class='add-to-favourites favourite'><svg width="22" height="22" viewBox="0 0 22 22" fill="inherit" xmlns="http://www.w3.org/2000/svg">
 <path d="M18.4801 4.58332C17.5084 3.6091 16.2203 3.01448 14.8485 2.90689C13.4768 2.79931 12.1117 3.18583 11.0001 3.99666C9.83374 3.12916 8.38204 2.73579 6.93731 2.89577C5.49258 3.05576 4.16212 3.7572 3.21386 4.85886C2.2656 5.96051 1.76997 7.38055 1.82678 8.833C1.8836 10.2855 2.48863 11.6624 3.52005 12.6867L9.21255 18.3883C9.68923 18.8575 10.3312 19.1204 11.0001 19.1204C11.6689 19.1204 12.3109 18.8575 12.7876 18.3883L18.4801 12.6867C19.5503 11.6098 20.1511 10.1532 20.1511 8.63499C20.1511 7.11674 19.5503 5.66016 18.4801 4.58332ZM17.1876 11.4217L11.4951 17.1142C11.4303 17.1796 11.3532 17.2315 11.2682 17.2669C11.1832 17.3024 11.0921 17.3206 11.0001 17.3206C10.908 17.3206 10.8169 17.3024 10.7319 17.2669C10.6469 17.2315 10.5698 17.1796 10.5051 17.1142L4.81255 11.3942C4.09366 10.6593 3.69111 9.67217 3.69111 8.64416C3.69111 7.61615 4.09366 6.62901 4.81255 5.89416C5.54511 5.17089 6.53311 4.76534 7.56255 4.76534C8.59199 4.76534 9.57999 5.17089 10.3126 5.89416C10.3978 5.98007 10.4992 6.04827 10.6109 6.09481C10.7226 6.14134 10.8424 6.1653 10.9634 6.1653C11.0844 6.1653 11.2042 6.14134 11.3159 6.09481C11.4276 6.04827 11.529 5.98007 11.6142 5.89416C12.3468 5.17089 13.3348 4.76534 14.3642 4.76534C15.3937 4.76534 16.3817 5.17089 17.1142 5.89416C17.843 6.61938 18.2588 7.60116 18.2725 8.6292C18.2862 9.65724 17.8967 10.6498 17.1876 11.3942V11.4217Z" fill="white"/>
 </svg>
 </button>`
@@ -387,6 +388,14 @@ const toggleSidebar = () => {
 	sidebar.classList.toggle('active');
 };
 
+const selectProductSize = (e) => {
+	let currentTarget = e.currentTarget;
+	sizeBtns.forEach((btn) => {
+		btn.classList.remove('selected');
+	});
+	currentTarget.classList.add('selected');
+};
+
 if (navbar) menu.addEventListener('click', toggleMenu);
 if (navbar) closeMenu.addEventListener('click', toggleMenu);
 if (styledCheckbox) styledCheckbox.addEventListener('click', toggleCheckbox);
@@ -412,3 +421,6 @@ if (ItemContent && ItemTitle) {
 if (typesContainer) setTypes();
 if (filterIcon) filterIcon.addEventListener('click', toggleSidebar);
 if (closeFilter) closeFilter.addEventListener('click', toggleSidebar);
+if (sizeBtns) {
+	sizeBtns.forEach((btn) => btn.addEventListener('click', selectProductSize));
+}

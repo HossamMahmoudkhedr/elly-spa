@@ -688,7 +688,7 @@ button.tag {
 	background-color: rgba(255, 255, 255, 0.227);
 }
 .add-to-cart-btn {
-	bottom: -10%;
+	bottom: -25%;
 	transition: all 0.3s linear !important;
 }
 .all-products-container .product-image:hover .add-to-cart-btn {
@@ -714,9 +714,9 @@ button.tag {
 .product-images-container .main-image {
 	height: 100%;
 	width: 100%;
-	position: relative;
+	/* position: relative; */
 }
-.product-images-container .main-image button.favourite-icon {
+.product-images-container button.favourite-icon {
 	top: 1rem;
 	left: 1rem;
 	padding: 0.5rem 0.6rem;
