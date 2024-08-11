@@ -688,7 +688,7 @@ button.tag {
 	background-color: rgba(255, 255, 255, 0.227);
 }
 .add-to-cart-btn {
-	bottom: -100%;
+	bottom: -10%;
 	transition: all 0.3s linear !important;
 }
 .all-products-container .product-image:hover .add-to-cart-btn {
