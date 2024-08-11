@@ -165,14 +165,14 @@ const setProducts = (container, cardsNo = 4) => {
 </button>`
 								: ''
 						}
-								<a href='/product.html?id=${product.id}'>
+								<a href='./product.html?id=${product.id}'>
 							<img
 								src=${product.image}
 								alt=${product.i18n} />
 								</a>
 								<button class="add-to-cart-btn px-2 position-absolute start-50 translate-middle-x circular-button circular-button-transparent" data-i18n="add_to_cart">اضف الى السلة</button>
 						</div>
-						<a href=${product.productLink} class="product-details">
+						<a href='./product.html?id=${product.id}' class="product-details">
 							<p data-i18n=${product.i18n}>${product.name}</p>
 							<div class="d-flex gap-1 align-items-center">
 								<p>${product.price}</p>
