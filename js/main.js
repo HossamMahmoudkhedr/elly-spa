@@ -188,7 +188,7 @@ const setProducts = (container, cardsNo = 4) => {
 
 const setPosts = () => {
 	let html = '';
-	postsData.map((post) => {
+	postsData.slice(0, 3).map((post) => {
 		html += `
 			<a
 							href=${post.postLink}
@@ -217,7 +217,15 @@ const setPosts = () => {
 										}...
 									</p>
 									<div class="d-flex flex-column flex-lg-row gap-md-3 gap-2 align-items-lg-center">
-										<p data-i18n=${post.i18nTag}>${post.tag}</p>
+									${post.tags
+										.map(
+											(tag) =>
+												`<p data-i18n=${post.i18nTag} class=" d-none d-lg-block post-tag">${tag.name}</p>`
+										)
+										.join('')}
+										<p data-i18n=${post.i18nTag} class=" d-block d-lg-none post-tag">${
+			post.tags[0].name
+		}</p>
 										<p data-i18n=${post.i18nDate}>${post.date}</p>
 									</div>
 								</div>

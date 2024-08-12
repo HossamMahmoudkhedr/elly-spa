@@ -10,6 +10,7 @@ const productPrice = document.getElementById('product-price');
 const productDescription = document.getElementById('product-description');
 const howToUse = document.getElementById('how-to-use');
 const components = document.getElementById('components');
+const numberOfRates = document.getElementById('number-of-rates');
 
 const currentProduct = productsData.filter(
 	(product) => productId == product.id
@@ -51,23 +52,27 @@ const createSubImgs = () => {
 };
 
 const setProductName = () => {
-	productName.innerText = currentProduct.name;
+	productName.innerText = currentProduct.name || '';
 };
 const setProductPrice = () => {
-	productPrice.innerText = currentProduct.price;
+	productPrice.innerText = currentProduct.price || '';
 };
 const setProductDescription = () => {
-	productDescription.innerText = currentProduct.description;
+	productDescription.innerText = currentProduct.description || '';
 };
 const setUsage = () => {
-	howToUse.innerText = currentProduct.usage;
+	howToUse.innerText = currentProduct.usage || '';
 };
 const setComponents = () => {
-	components.innerText = currentProduct.components;
+	components.innerText = currentProduct.components || '';
+};
+const setNumberOfRates = () => {
+	numberOfRates.innerText = currentProduct.numberOfRates || '';
 };
 
 setProductName();
 setProductPrice();
+setNumberOfRates();
 setProductDescription();
 setUsage();
 setComponents();

@@ -427,7 +427,7 @@ nav ul li a {
 	font-size: 0.875rem;
 }
 
-.post-card div:last-child div:last-child div p:first-child {
+.post-card div:last-child div:last-child div .post-tag {
 	color: var(--primary);
 	font-weight: 700;
 }
@@ -829,6 +829,47 @@ button.tag {
 
 /* End Product Page Styling */
 
+/* Start Blog Page Styling */
+.header-content {
+	height: 514px;
+}
+.header-content > a {
+	width: 100%;
+	height: 100%;
+}
+.header-content > a img {
+	width: 100%;
+
+	height: 100%;
+}
+.header-content .post-info {
+	height: 100%;
+}
+.header-content .post-info div .date {
+	font-size: 1.25rem;
+	font-weight: normal;
+}
+.header-content .post-info div .title {
+	font-size: 3rem;
+}
+.header-content .post-info div .sub-title {
+	font-size: 1.5rem;
+	font-weight: normal;
+}
+.body-content {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+}
+.body-content .post-card .post-image {
+	height: 247px;
+	width: auto !important;
+}
+.body-content .post-card div .date-duration p {
+	color: var(--secondary-text-color);
+}
+/* End Blog Page Styling */
+
 @media (min-width: 1400px) {
 	.container-xxl {
 		max-width: 1460px;
@@ -961,6 +1002,28 @@ button.tag {
 	.square-button.size-button {
 		width: 100%;
 	}
+	.header-content .post-info div .title {
+		font-size: 1.25rem;
+	}
+	.header-content .post-info div .date,
+	.header-content .post-info div .sub-title {
+		font-size: 0.875rem;
+	}
+	.header-content .post-info .circular-button {
+		padding: 5px;
+	}
+	.body-content {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.body-content .post-card .post-image {
+		height: 118px;
+	}
+	.body-content .post-card > div:last-child {
+		width: 100% !important;
+	}
+	.body-content .post-card div .date-duration p {
+		font-size: 0.75rem;
+	}
 	footer div div:last-child ul li {
 		position: relative;
 		padding: 0 1rem;
@@ -1026,6 +1089,11 @@ button.tag {
 	}
 	.post-info div p {
 		font-size: 0.875rem;
+	}
+	.header-content {
+		height: 222px;
+		border-radius: 1rem;
+		overflow: hidden;
 	}
 	footer div div:last-child p {
 		width: 90%;
