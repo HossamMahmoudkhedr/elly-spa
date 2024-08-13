@@ -20,6 +20,7 @@ const activeSubImage = (e, img) => {
 
 export const createMainImg = (images) => {
 	const img = document.createElement('img');
+	console.log('Images:', images);
 	img.src = images[images.length - 1].link;
 	mainImage.appendChild(img);
 };
