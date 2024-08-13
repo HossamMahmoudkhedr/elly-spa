@@ -76,6 +76,9 @@ button[type='submit']:disabled {
 img {
 	object-fit: cover;
 }
+nav {
+	border-bottom: 1px solid var(--border-color);
+}
 /* End General Styling */
 
 /* Start Reusable styles */
@@ -762,6 +765,9 @@ button.tag {
 .product-description .price {
 	font-size: 1.5rem;
 	font-weight: 700;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
 }
 .product-description .description {
 	color: var(--secondary-text-color);
@@ -781,6 +787,17 @@ button.tag {
 	outline: none;
 	font-weight: 700;
 	font-size: 1.5rem;
+	transition: all 0.2s linear;
+}
+.square-button-primary-outlined {
+	background-color: transparent;
+	border: 1px solid var(--primary);
+	color: var(--primary);
+	padding: 0.7rem 1.6rem;
+}
+.square-button-primary-outlined:hover {
+	background-color: var(--primary);
+	color: white;
 }
 .square-button-primary {
 	background-color: var(--primary);
@@ -928,6 +945,37 @@ button.tag {
 	height: 100%;
 }
 /* End Service Page Styling */
+/* Start Service Book Page Styling */
+.product-description .time-info {
+	width: 70%;
+}
+.product-description .time-info div {
+	width: 50%;
+}
+.product-description .counter {
+	width: 30%;
+}
+.product-description .time-info div span {
+	height: 16px;
+}
+.product-description .counter button {
+	height: 20px;
+}
+.product-description .time-info div span svg,
+.product-description .counter button svg {
+	vertical-align: top;
+}
+.product-description .time-info div {
+	padding: 1rem;
+}
+.product-description .counter {
+	padding: 0.5rem 1rem;
+}
+#duration {
+	color: var(--active-slider-dot);
+}
+
+/* End Service Book Page Styling */
 
 @media (min-width: 1400px) {
 	.container-xxl {
@@ -1054,9 +1102,10 @@ button.tag {
 		gap: 0.5rem;
 		left: 0;
 		width: 100%;
-		padding: 1rem;
+		padding: 1rem 0.3rem;
 		z-index: 3;
 		background-color: var(--bg-color);
+		justify-content: center;
 	}
 	.square-button.size-button {
 		width: 100%;
@@ -1083,6 +1132,17 @@ button.tag {
 	.body-content .post-card div .date-duration p {
 		font-size: 0.75rem;
 	}
+	.product-description .time-info {
+		width: 100%;
+	}
+
+	.product-description .counter {
+		width: 100%;
+	}
+	.product-description .counter {
+		padding: 1rem;
+	}
+
 	footer div div:last-child ul li {
 		position: relative;
 		padding: 0 1rem;

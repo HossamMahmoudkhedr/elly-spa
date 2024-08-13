@@ -1,55 +1,25 @@
-export function getParameterByName(name, url = window.location.href) {
-	name = name.replace(/[\[\]]/g, '\\$&');
-	let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
-	let results = regex.exec(url);
-	if (!results) return null;
-	if (!results[2]) return '';
-	return decodeURIComponent(results[2].replace(/\+/g, ' '));
-}
-const mainImage = document.querySelector('.main-image');
+import { servicesData } from '../data/servicesData.js';
+import { getParameterByName } from './helpers.js';
 
-const activeSubImage = (e, img) => {
-	const currentTarget = e.currentTarget;
-	const images = document.querySelectorAll('.sub-image');
-	images.forEach((image) => {
-		image.classList.remove('selected');
-	});
-	mainImage.children[0].src = img.link;
-	currentTarget.classList.add('selected');
+const id = getParameterByName('id');
+const currentService = servicesData.filter((service) => service.id == id)[0];
+console.log(currentService);
+
+// Services Elements
+const ServiceTypesContainer = document.querySelector('.service-types');
+const serviceImage = document.getElementById('service-image');
+const serviceName = document.getElementById('service-name');
+
+const setServiceImage = () => {
+	serviceImage.src = currentService.image || '';
 };
 
-export const createMainImg = (images) => {
-	const img = document.createElement('img');
-	img.src = images[images.length - 1].link;
-	mainImage.appendChild(img);
+const setServiceName = () => {
+	serviceName.innerText = currentService.name || '';
 };
-
-export const createSubImgs = (images) => {
-	const subImages = document.querySelector('.more-images');
-	images.map((img, i) => {
-		const div = document.createElement('div');
-		const subImage = document.createElement('img');
-		subImage.src = img.link;
-		subImage.alt = img.name;
-		div.classList.add('sub-image');
-		div.appendChild(subImage);
-		if (i === images.length - 1) {
-			div.classList.add('selected');
-		}
-		div.onclick = (e) => {
-			activeSubImage(e, img);
-		};
-		subImages.appendChild(div);
-	});
-};
-
-export const setData = (itemContainer, itemData) => {
-	itemContainer.innerText = itemData || '';
-};
-
-export const setServicesTypes = (types, serviceId, container) => {
+const setServicesTypes = () => {
 	let html = '';
-	types.map((service) => {
+	currentService.types.map((service) => {
 		html += `
 			<div class="service">
 							<div class="service-info">
@@ -59,7 +29,7 @@ export const setServicesTypes = (types, serviceId, container) => {
 										${service.description}
 									</p>
 									<div class="d-flex gap-3 align-items-center">
-										<a href='./service_book.html?serviceId=${serviceId}&serviceTypeId=${service.id}'
+										<a href='./service_book.html?serviceId=${currentService.id}&serviceTypeId=${service.id}'
 											class="circular-button circular-button-primary fw-normal fs-6 no-hover px-4">
 											حجز
 										</a>
@@ -89,6 +59,10 @@ export const setServicesTypes = (types, serviceId, container) => {
 							</div>
 						</div>
 		`;
-		container.innerHTML = html;
+		ServiceTypesContainer.innerHTML = html;
 	});
 };
+
+setServicesTypes();
+setServiceImage();
+setServiceName();

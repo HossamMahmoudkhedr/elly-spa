@@ -19,7 +19,7 @@
 	</head>
 	<body>
 		<!-- Start Navbar -->
-		<nav class="border border-bottom-1">
+		<nav>
 			<div
 				class="navbar container-fluid d-flex flex-column flex-md-row justify-content-start justify-content-md-between gap-4 gap-md-0 align-items-center">
 				<div
@@ -195,14 +195,17 @@
 					href="#"
 					class="d-flex flex-column gap-2">
 					<img
+						id="service-image"
 						loading="lazy"
-						src="./assets/images/second-slide.jpg"
+						src=""
 						alt="" />
 					<div
 						class="main-service position-absolute start-50 top-50 translate-middle w-100 h-100 d-flex align-items-center justify-content-center">
 						<div class="d-flex flex-column align-items-center">
 							<h3 class="service-title">الخدمات</h3>
-							<p class="service-sub-title">مساج</p>
+							<p
+								id="service-name"
+								class="service-sub-title"></p>
 						</div>
 					</div>
 				</a>
@@ -461,5 +464,8 @@
 		<script
 			type="module"
 			src="./js/main.js"></script>
+		<script
+			type="module"
+			src="./js/services.js"></script>
 	</body>
 </html>

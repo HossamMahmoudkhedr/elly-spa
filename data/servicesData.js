@@ -14,6 +14,28 @@ export const servicesData = [
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 2,
@@ -23,6 +45,28 @@ export const servicesData = [
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 3,
@@ -32,6 +76,28 @@ export const servicesData = [
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 4,
@@ -41,6 +107,28 @@ export const servicesData = [
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 5,
@@ -50,6 +138,28 @@ export const servicesData = [
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 		],
 	},
@@ -62,48 +172,158 @@ export const servicesData = [
 		types: [
 			{
 				id: 1,
-				name: 'المساج العلاجي',
+				name: 'حمام مغربي',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 2,
-				name: 'المساج العلاجي',
+				name: 'حمام مغربي',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 3,
-				name: 'المساج العلاجي',
+				name: 'حمام مغربي',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 4,
-				name: 'المساج العلاجي',
+				name: 'حمام مغربي',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 5,
-				name: 'المساج العلاجي',
+				name: 'حمام مغربي',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 		],
 	},
@@ -116,48 +336,158 @@ export const servicesData = [
 		types: [
 			{
 				id: 1,
-				name: 'المساج العلاجي',
+				name: 'عناية بالاظافر',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 2,
-				name: 'المساج العلاجي',
+				name: 'عناية بالاظافر',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-slide.jpg',
+					},
+					{
+						name: '',
+						link: './assets/images/second-slide.jpg',
+					},
+				],
 			},
 			{
 				id: 3,
-				name: 'المساج العلاجي',
+				name: 'عناية بالاظافر',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 22,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 4,
-				name: 'المساج العلاجي',
+				name: 'عناية بالاظافر',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 5,
-				name: 'المساج العلاجي',
+				name: 'عناية بالاظافر',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 		],
 	},
@@ -170,48 +500,158 @@ export const servicesData = [
 		types: [
 			{
 				id: 1,
-				name: 'المساج العلاجي',
+				name: 'علاج بالبرافين',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 2,
-				name: 'المساج العلاجي',
+				name: 'علاج بالبرافين',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 3,
-				name: 'المساج العلاجي',
+				name: 'علاج بالبرافين',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 4,
-				name: 'المساج العلاجي',
+				name: 'علاج بالبرافين',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 5,
-				name: 'المساج العلاجي',
+				name: 'علاج بالبرافين',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 		],
 	},
@@ -224,48 +664,158 @@ export const servicesData = [
 		types: [
 			{
 				id: 1,
-				name: 'المساج العلاجي',
+				name: 'عناية بالبشرة',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 2,
-				name: 'المساج العلاجي',
+				name: 'عناية بالبشرة',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 3,
-				name: 'المساج العلاجي',
+				name: 'عناية بالبشرة',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 4,
-				name: 'المساج العلاجي',
+				name: 'عناية بالبشرة',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 5,
-				name: 'المساج العلاجي',
+				name: 'عناية بالبشرة',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 		],
 	},
@@ -278,48 +828,158 @@ export const servicesData = [
 		types: [
 			{
 				id: 1,
-				name: 'المساج العلاجي',
+				name: 'الباقات الخاصة',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 2,
-				name: 'المساج العلاجي',
+				name: 'الباقات الخاصة',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 3,
-				name: 'المساج العلاجي',
+				name: 'الباقات الخاصة',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 4,
-				name: 'المساج العلاجي',
+				name: 'الباقات الخاصة',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 			{
 				id: 5,
-				name: 'المساج العلاجي',
+				name: 'الباقات الخاصة',
 				i18n: 'massage',
 				description:
 					'المساج العلاجي هو تقنية تهدف إلى تخفيف الألم والتوتر العضلي من خلال تطبيق ضغط مخصص.',
 				image: './assets/images/second-slide.jpg',
 				bookLink: '#',
+				price: 200,
+				numberOfRates: '100',
+				duration: '20د',
+				info: 'تخفيف الآلام المزمنة والتوتر العضلي. تحسين الدورة الدموية وتعزيز الشفاء الطبيعي للجسم. تخفيف التوتر والقلق، وتحسين جودة النوم. تعزيز المرونة والحركة، وتقليل التهابات العضلات والمفاصل. دعم الجهاز المناعي وتحسين الصحة العامة.',
+				serviceImages: [
+					{
+						name: '',
+						link: './assets/images/first-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/second-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/third-product.png',
+					},
+					{
+						name: '',
+						link: './assets/images/fourth-product.png',
+					},
+				],
 			},
 		],
 	},
