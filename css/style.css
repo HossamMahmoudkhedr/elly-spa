@@ -1327,7 +1327,7 @@ button.tag {
 		padding: 1rem;
 	}
 	.component .order .order-details .info .name-price p:first-child {
-		font-size: 1rem;
+		font-size: 1rem !important;
 	}
 	.component .order .order-details .info .name-price p:last-child {
 		font-size: 0.875rem;
