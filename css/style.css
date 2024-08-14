@@ -1147,6 +1147,96 @@ button.tag {
 } */
 /* End Check out Page Styling */
 
+/* Start Profile Page Styling */
+.profile-component {
+	background-color: var(--bg-color);
+	border-radius: 1rem;
+}
+.user-information {
+	width: 20%;
+}
+.purchase-information {
+	width: 80%;
+}
+
+.user-info {
+	position: relative;
+	padding: 2rem 3rem;
+}
+.user-info .edit-icon {
+	position: absolute;
+	top: 0.875rem;
+	right: 1.5rem;
+	padding: 0.1rem 0.5rem;
+	border-radius: 50%;
+	border: 1px solid var(--border-color);
+}
+.user-info .phone {
+	color: var(--secondary-text-color);
+}
+
+.tabs-buttons button,
+.order-status .status-buttons button {
+	width: fit-content;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	font-size: 1.25rem;
+	color: var(--secondary-text-color);
+}
+.tabs-buttons button.active {
+	font-weight: 700;
+	color: var(--text-color);
+}
+.order-status {
+	gap: 2rem;
+}
+.order-status .status-buttons {
+	display: flex;
+
+	gap: 3.125rem;
+}
+.order-status .status-buttons button {
+	padding-bottom: 1.5rem;
+	color: var(--text-color);
+	font-weight: 700;
+}
+.order-status .status-buttons button.active {
+	border-bottom: 2px solid var(--primary);
+}
+.status-details {
+	padding: 1.25rem 1.5rem;
+}
+.component-border {
+	border-bottom: 1px solid #f4f4f4;
+}
+.products-status {
+	padding-bottom: 1.5rem;
+}
+
+.products-status div .product-image {
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	border-radius: 0.75rem;
+}
+.products-status > div:last-child p {
+	font-weight: 700;
+	font-size: 1.25rem;
+}
+.products-status div:first-child div .product-tag {
+	color: var(--secondary-text-color);
+}
+.products-status div:first-child div .product-name {
+	font-size: 1.25rem;
+}
+.products-status div .product-image img {
+	width: 100%;
+	height: 100%;
+}
+
+/* End Profile Page Styling */
+
 @media (min-width: 1400px) {
 	.container-xxl {
 		max-width: 1460px;
@@ -1332,6 +1422,41 @@ button.tag {
 	.component .order .order-details .info .name-price p:last-child {
 		font-size: 0.875rem;
 	}
+	.user-information,
+	.purchase-information {
+		width: 100%;
+	}
+	.tabs-buttons button {
+		width: 50%;
+		border-radius: 1rem;
+	}
+	.tabs-buttons button {
+		color: var(--text-color);
+	}
+	.tabs-buttons button.active {
+		background-color: var(--secondary);
+		color: var(--primary);
+	}
+	.products-status div .product-image {
+		width: 80px;
+		height: 80px;
+	}
+	.products-status div:last-child p {
+		font-weight: 400;
+		font-size: 0.875rem;
+	}
+	.products-status div:first-child div .product-tag {
+		font-size: 0.75rem;
+	}
+	.products-status div:first-child div .product-name {
+		font-size: 1rem;
+	}
+	.products-status div:first-child div .product-size {
+		font-size: 0.875rem;
+	}
+	.order-status .status-buttons {
+		justify-content: center;
+	}
 	footer div div:last-child ul li {
 		position: relative;
 		padding: 0 1rem;
@@ -1422,7 +1547,7 @@ button.tag {
 	.body-content.services-content {
 		grid-template-columns: repeat(1, 1fr);
 	}
-	.background-secondary {
+	.checkout.background-secondary {
 		background-color: var(--bg-color);
 	}
 	.component {

@@ -59,6 +59,10 @@ const orderInformation = document.querySelector('.order-information');
 const next = document.querySelector('.next');
 const cancel = document.querySelector('.cancel');
 
+// Profile Elements
+const statusBtns = document.querySelectorAll('.status-buttons button');
+const tabsBtns = document.querySelectorAll('.tabs-buttons button');
+
 let windowWidth = window.innerWidth;
 
 window.onresize = () => {
@@ -424,6 +428,12 @@ const selectProductSize = (e) => {
 	currentTarget.classList.add('selected');
 };
 
+const selectBtn = (e, buttons) => {
+	let currentTarget = e.currentTarget;
+	buttons.forEach((btn) => btn.classList.remove('active'));
+	currentTarget.classList.add('active');
+};
+
 let counter = 1;
 const countUp = () => {
 	counter++;
@@ -477,4 +487,20 @@ if (sizeBtns) {
 if (countUpElement) countUpElement.addEventListener('click', countUp);
 if (countDownElement) countDownElement.addEventListener('click', countDown);
 if (next) next.addEventListener('click', showContactInformation);
+if (tabsBtns) {
+	tabsBtns.forEach((btn) =>
+		btn.addEventListener('click', (e) => {
+			statusBtns.forEach((btn) => btn.classList.remove('active'));
+			statusBtns[0].classList.add('active');
+			selectBtn(e, tabsBtns);
+		})
+	);
+}
+if (statusBtns) {
+	statusBtns.forEach((btn) => {
+		btn.addEventListener('click', (e) => {
+			selectBtn(e, statusBtns);
+		});
+	});
+}
 // if (ServiceTypesContainer) setServicesTypes();
