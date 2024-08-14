@@ -65,6 +65,9 @@ button[type='submit']:disabled {
 .text-black {
 	color: var(--text-color) !important;
 }
+.bg-primary {
+	background-color: var(--primary) !important;
+}
 .bg-secondary {
 	background-color: var(--secondary) !important;
 }
@@ -83,6 +86,9 @@ nav {
 /* End General Styling */
 
 /* Start Reusable styles */
+.background-secondary {
+	background-color: #fafafa;
+}
 .container-spacing {
 	margin-bottom: 3rem;
 }
@@ -190,6 +196,7 @@ form .input-group input {
 	border: 1px solid var(--light-gray);
 	border-radius: 6px;
 	outline: none;
+	width: 100%;
 }
 form input::placeholder {
 	padding: 1rem 0;
@@ -978,6 +985,168 @@ button.tag {
 
 /* End Service Book Page Styling */
 
+/* Start Check out Page Styling */
+.head {
+	padding: 2.5rem 0;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+.contact-information {
+	display: flex;
+	width: 50%;
+}
+.component {
+	padding: 1.5rem;
+	background-color: var(--bg-color);
+	border-radius: 1rem;
+}
+.payment-method a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 143px;
+	height: 58px;
+	box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
+	/* padding: 1rem; */
+}
+.payment-method a img {
+	width: 100%;
+}
+.order-information {
+	display: flex;
+	width: 50%;
+}
+.component .orders {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+.component .order,
+.component .purchase-details .details {
+	border-bottom: 1px solid #f4f4f4;
+}
+.component .order {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	padding: 1.5rem 0;
+}
+.component .order .order-image {
+	width: 20%;
+	height: 100px;
+	overflow: hidden;
+	border-radius: 0.75rem;
+}
+.component .order .order-buttons {
+	/* width: 32%; */
+}
+.component .order .order-buttons {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.component .order .order-buttons .counter.selected {
+	border-color: transparent;
+}
+.component .order .order-buttons .counter {
+	width: fit-content;
+}
+.component .order .order-buttons .remove-order {
+	padding: 0.875rem;
+	background-color: #df575726;
+	border-radius: 0.5rem;
+	border: none;
+	outline: none;
+}
+.component .order .order-image img {
+	width: 100%;
+	height: 100%;
+}
+.component .order .order-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	width: 100%;
+}
+.component .order .order-details .info {
+	display: flex;
+
+	justify-content: space-between;
+	height: 100%;
+}
+.component .order .order-details .info .name-price p {
+	font-weight: 700;
+}
+.component .order .order-details .duration-date p {
+	color: #8e8e8e;
+}
+.component .purchase {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+.component .purchase p {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+.component .purchase div input {
+	padding: 1rem;
+	border: 1px solid var(--border-color);
+	border-radius: 0.5rem;
+	outline: none;
+	background-color: var(--second-bg-color);
+	width: 85%;
+}
+.component .purchase div input::placeholder {
+	color: var(--text-color);
+	font-size: 1rem;
+	padding: 1px 0;
+}
+.component .purchase .activate {
+	background-color: var(--bg-color);
+	border: 1px solid var(--border-color);
+	font-size: 1rem;
+	height: 100%;
+}
+.component .purchase .purchase-details .details {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding-bottom: 2rem;
+}
+.component .purchase .purchase-details .details div p {
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+.component .purchase .purchase-details .total {
+	padding-top: 2rem;
+}
+.component .purchase .purchase-details .total p {
+	font-size: 2rem;
+}
+.component .purchase .pay {
+	width: 100%;
+	padding: 1.5rem;
+	font-size: 2rem;
+	font-weight: 700;
+	border: none;
+}
+.component .purchase .purchase-content {
+	display: flex;
+	flex-direction: column;
+	gap: 5.5rem;
+}
+
+/* .component .order .order-details .info div p a {
+	border: none;
+	outline: none;
+	background-color: transparent;
+} */
+/* End Check out Page Styling */
+
 @media (min-width: 1400px) {
 	.container-xxl {
 		max-width: 1460px;
@@ -995,6 +1164,20 @@ button.tag {
 
 	.login-heading p {
 		font-size: 1rem;
+	}
+	.contact-information {
+		display: none;
+	}
+	.contact-information.active {
+		display: flex;
+		width: 100%;
+	}
+	.order-information.active {
+		display: flex;
+		width: 100%;
+	}
+	.order-information {
+		display: none;
 	}
 }
 
@@ -1143,7 +1326,12 @@ button.tag {
 	.product-description .counter {
 		padding: 1rem;
 	}
-
+	.component .order .order-details .info .name-price p:first-child {
+		font-size: 1rem;
+	}
+	.component .order .order-details .info .name-price p:last-child {
+		font-size: 0.875rem;
+	}
 	footer div div:last-child ul li {
 		position: relative;
 		padding: 0 1rem;
@@ -1233,6 +1421,53 @@ button.tag {
 	}
 	.body-content.services-content {
 		grid-template-columns: repeat(1, 1fr);
+	}
+	.background-secondary {
+		background-color: var(--bg-color);
+	}
+	.component {
+		padding: unset;
+	}
+	.component .order .order-image {
+		width: 30%;
+	}
+	.component .order .order-buttons {
+		width: 45%;
+	}
+	.component .order .order-buttons .counter {
+		width: fit-content;
+	}
+	#number-of-orders {
+		font-size: 12px !important;
+	}
+	.remove-order svg {
+		width: 12px !important;
+		height: 12px !important;
+	}
+	.component .order .order-buttons .remove-order {
+		padding: 0.2rem 0.5rem;
+	}
+	.duration-date {
+		gap: 2.5rem !important;
+	}
+	.duration-date p {
+		font-size: 0.875rem;
+	}
+	.component .purchase .purchase-details .details div p {
+		font-size: 1rem;
+		font-weight: 400;
+	}
+	.component .purchase p,
+	.component .purchase .purchase-details .total p {
+		font-size: 1.125rem;
+		font-weight: 400;
+	}
+	.payment-method a {
+		width: 30%;
+		padding: 0.5rem 0.2rem;
+	}
+	.payment-method a p {
+		font-size: 1rem !important;
 	}
 	footer div div:last-child p {
 		width: 90%;
