@@ -281,8 +281,10 @@ const setPosts = () => {
 
 // Start Multi Range Implementation
 window.onload = function () {
-	slideMin();
-	slideMax();
+	if (minTooltip && maxTooltip) {
+		slideMin();
+		slideMax();
+	}
 };
 
 const minVal = document.querySelector('.min-val');
@@ -334,13 +336,6 @@ function setArea() {
 	maxTooltip.style.right = 100 - (maxVal.value / sliderMaxValue) * 100 + '%';
 }
 
-function setMinInput() {
-	let minPrice = parseInt(priceInputMin.value);
-}
-
-function setMaxInput() {
-	let maxPrice = parseInt(priceInputMax.value);
-}
 // End Multi Range Implementation
 
 const showItemContent = (index) => {
