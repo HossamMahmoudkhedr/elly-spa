@@ -9,6 +9,8 @@ import { getParameterByName, setData } from './helpers.js';
 const menu = document.getElementById('menu');
 const closeMenu = document.getElementById('close-menu');
 const navbar = document.querySelector('.navbar');
+const servicesBtn = document.querySelector('.services-button');
+const servicesList = document.querySelector('.services-list');
 
 // Form Elements
 const termsAndConditionsCheckbox = document.getElementById(
@@ -83,6 +85,10 @@ const toggleCheckbox = (e) => {
 
 const toggleMenu = () => {
 	navbar.classList.toggle('active');
+};
+
+const toggleServicesList = () => {
+	servicesList.classList.toggle('active');
 };
 
 const setCarouselImages = () => {
@@ -458,6 +464,7 @@ const showContactInformation = () => {
 
 if (navbar) menu.addEventListener('click', toggleMenu);
 if (navbar) closeMenu.addEventListener('click', toggleMenu);
+if (servicesList) servicesBtn.addEventListener('click', toggleServicesList);
 if (styledCheckbox) styledCheckbox.addEventListener('click', toggleCheckbox);
 if (termsAndConditionsLabel)
 	termsAndConditionsLabel.addEventListener('click', toggleCheckbox);
