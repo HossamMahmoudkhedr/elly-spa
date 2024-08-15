@@ -98,8 +98,9 @@ const translateContent = () => {
 	const elements = document.querySelectorAll('[data-i18n]');
 	elements.forEach((element) => {
 		let theKey = element.getAttribute('data-i18n');
-		element.textContent =
-			translation[currentLanguage][theKey] || element.textContent;
+		element.textContent = translation[currentLanguage][theKey]
+			? translation[currentLanguage][theKey]
+			: element.textContent;
 	});
 };
 
@@ -262,7 +263,7 @@ const setProducts = (container, cardsNo = 4) => {
 	translateContent();
 };
 
-const setPosts = () => {
+function setPosts() {
 	let html = '';
 	postsData.slice(0, 3).map((post) => {
 		html += `
@@ -310,7 +311,7 @@ const setPosts = () => {
 		`;
 	});
 	postsContainer.innerHTML = html;
-};
+}
 
 // Start Multi Range Implementation
 window.onload = function () {
