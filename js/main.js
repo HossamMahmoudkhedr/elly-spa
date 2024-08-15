@@ -103,7 +103,9 @@ const translateContent = () => {
 			: element.textContent;
 	});
 };
-
+window.onload = () => {
+	localStorage.setItem('lang', 'ar');
+};
 translateContent();
 
 const toggleMenu = () => {
