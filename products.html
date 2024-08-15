@@ -556,43 +556,50 @@
 										</div>
 										<div
 											class="item-content d-flex justify-content-center align-items-center">
-											<div class="range_container">
-												<div class="sliders_control">
-													<input
-														id="fromSlider"
-														type="range"
-														value="10"
-														min="0"
-														max="100" />
-													<input
-														id="toSlider"
-														type="range"
-														value="40"
-														min="0"
-														max="100" />
+											<div class="range_container w-100">
+												<div class="double-slider-box w-100">
+													<div class="range-slider">
+														<span class="slider-track"></span>
+														<input
+															type="range"
+															name="min_val"
+															class="min-val"
+															min="1000"
+															max="12000"
+															value="2000" />
+														<input
+															type="range"
+															name="max_val"
+															class="max-val"
+															min="1000"
+															max="12000"
+															value="7000" />
+														<div class="custom-tooltip min-tooltip"></div>
+														<div class="custom-tooltip max-tooltip"></div>
+													</div>
+													<div class="input-box">
+														<div class="min-box">
+															<div class="input-wrap">
+																<span class="input-addon d-none">ر.س</span>
+																<input
+																	hidden
+																	type="text"
+																	name="min_input"
+																	class="input-field min-input" />
+															</div>
+														</div>
+														<div class="max-box">
+															<div class="input-wrap">
+																<span class="input-addon d-none">ر.س</span>
+																<input
+																	hidden
+																	type="text"
+																	name="max_input"
+																	class="input-field max-input" />
+															</div>
+														</div>
+													</div>
 												</div>
-												<!-- <div class="form_control">
-													<div class="form_control_container">
-														<div class="form_control_container__time">Min</div>
-														<input
-															class="form_control_container__time__input"
-															type="number"
-															id="fromInput"
-															value="10"
-															min="0"
-															max="100" />
-													</div>
-													<div class="form_control_container">
-														<div class="form_control_container__time">Max</div>
-														<input
-															class="form_control_container__time__input"
-															type="number"
-															id="toInput"
-															value="40"
-															min="0"
-															max="100" />
-													</div>
-												</div> -->
 											</div>
 										</div>
 									</div>

@@ -280,96 +280,62 @@ const setPosts = () => {
 };
 
 // Start Multi Range Implementation
-function controlFromInput(fromSlider, fromInput, toInput, controlSlider) {
-	const [from, to] = getParsed(fromInput, toInput);
-	fillSlider(fromInput, toInput, '#C6C6C6', '#25daa5', controlSlider);
-	if (from > to) {
-		fromSlider.value = to;
-		fromInput.value = to;
-	} else {
-		fromSlider.value = from;
+window.onload = function () {
+	slideMin();
+	slideMax();
+};
+
+const minVal = document.querySelector('.min-val');
+const maxVal = document.querySelector('.max-val');
+const priceInputMin = document.querySelector('.min-input');
+const priceInputMax = document.querySelector('.max-input');
+const minTooltip = document.querySelector('.min-tooltip');
+const maxTooltip = document.querySelector('.max-tooltip');
+const minGap = 1500;
+const range = document.querySelector('.slider-track');
+const sliderMinValue = parseInt(minVal.min);
+const sliderMaxValue = parseInt(maxVal.max);
+
+function slideMin() {
+	let gap = parseInt(maxVal.value) - parseInt(minVal.value);
+	if (gap <= minGap) {
+		minVal.value = parseInt(maxVal.value) - minGap;
 	}
+	minTooltip.innerHTML = `<p>ر.س</p><p>${minVal.value}</p>`;
+	priceInputMin.value = minVal.value;
+	setArea();
 }
 
-function controlToInput(toSlider, fromInput, toInput, controlSlider) {
-	const [from, to] = getParsed(fromInput, toInput);
-	fillSlider(fromInput, toInput, '#C6C6C6', '#25daa5', controlSlider);
-	setToggleAccessible(toInput);
-	if (from <= to) {
-		toSlider.value = to;
-		toInput.value = to;
-	} else {
-		toInput.value = from;
+function slideMax() {
+	let gap = parseInt(maxVal.value) - parseInt(minVal.value);
+	if (gap <= minGap) {
+		minVal.value = parseInt(minVal.value) - minGap;
 	}
+	maxTooltip.innerHTML = `<p>ر.س</p><p>${maxVal.value}</p>`;
+	priceInputMax.value = maxVal.value;
+	setArea();
 }
 
-function controlFromSlider(fromSlider, toSlider, fromInput) {
-	const [from, to] = getParsed(fromSlider, toSlider);
-	fillSlider(fromSlider, toSlider, '#C6C6C6', '#25daa5', toSlider);
-	if (from > to) {
-		fromSlider.value = to;
-		fromInput.value = to;
-	} else {
-		fromInput.value = from;
-	}
+function setArea() {
+	range.style.left = `${
+		((minVal.value - sliderMinValue) / (sliderMaxValue - sliderMinValue)) * 100
+	}%`;
+
+	range.style.left = (minVal.value / sliderMaxValue) * 100 + '%';
+	minTooltip.style.left = (minVal.value / sliderMaxValue) * 100 + '%';
+	range.style.right = `${
+		100 -
+		((maxVal.value - sliderMinValue) / (sliderMaxValue - sliderMinValue)) * 100
+	}%`;
+	maxTooltip.style.right = 100 - (maxVal.value / sliderMaxValue) * 100 + '%';
 }
 
-function controlToSlider(fromSlider, toSlider, toInput) {
-	const [from, to] = getParsed(fromSlider, toSlider);
-	fillSlider(fromSlider, toSlider, '#C6C6C6', '#25daa5', toSlider);
-	setToggleAccessible(toSlider);
-	if (from <= to) {
-		toSlider.value = to;
-		toInput.value = to;
-	} else {
-		toInput.value = from;
-		toSlider.value = from;
-	}
+function setMinInput() {
+	let minPrice = parseInt(priceInputMin.value);
 }
 
-function getParsed(currentFrom, currentTo) {
-	const from = parseInt(currentFrom.value, 10);
-	const to = parseInt(currentTo.value, 10);
-	return [from, to];
-}
-
-function fillSlider(from, to, sliderColor, rangeColor, controlSlider) {
-	const rangeDistance = to.max - to.min;
-	const fromPosition = from.value - to.min;
-	const toPosition = to.value - to.min;
-	controlSlider.style.background = `linear-gradient(
-			to right,
-      ${sliderColor} 0%,
-      ${sliderColor} ${(fromPosition / rangeDistance) * 100}%,
-      ${rangeColor} ${(fromPosition / rangeDistance) * 100}%,
-      ${rangeColor} ${(toPosition / rangeDistance) * 100}%, 
-      ${sliderColor} ${(toPosition / rangeDistance) * 100}%, 
-      ${sliderColor} 100%)`;
-}
-
-function setToggleAccessible(currentTarget) {
-	const toSlider = document.querySelector('#toSlider');
-	if (Number(currentTarget.value) <= 0) {
-		toSlider.style.zIndex = 2;
-	} else {
-		toSlider.style.zIndex = 0;
-	}
-}
-
-const fromSlider = document.querySelector('#fromSlider');
-const toSlider = document.querySelector('#toSlider');
-const fromInput = document.querySelector('#fromInput');
-const toInput = document.querySelector('#toInput');
-if (fromSlider && toSlider && fromInput && toInput) {
-	fillSlider(fromSlider, toSlider, '#C6C6C6', '#25daa5', toSlider);
-	setToggleAccessible(toSlider);
-
-	fromSlider.oninput = () => controlFromSlider(fromSlider, toSlider, fromInput);
-	toSlider.oninput = () => controlToSlider(fromSlider, toSlider, toInput);
-	fromInput.oninput = () =>
-		controlFromInput(fromSlider, fromInput, toInput, toSlider);
-	toInput.oninput = () =>
-		controlToInput(toSlider, fromInput, toInput, toSlider);
+function setMaxInput() {
+	let maxPrice = parseInt(priceInputMax.value);
 }
 // End Multi Range Implementation
 
@@ -518,6 +484,10 @@ if (filterIcon) filterIcon.addEventListener('click', toggleSidebar);
 if (closeFilter) closeFilter.addEventListener('click', toggleSidebar);
 if (sizeBtns) {
 	sizeBtns.forEach((btn) => btn.addEventListener('click', selectProductSize));
+}
+if (minTooltip && maxTooltip) {
+	minVal.addEventListener('input', slideMin);
+	maxVal.addEventListener('input', slideMax);
 }
 if (countUpElement) countUpElement.addEventListener('click', countUp);
 if (countDownElement) countDownElement.addEventListener('click', countDown);
