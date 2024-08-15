@@ -103,10 +103,13 @@ const translateContent = () => {
 			: element.textContent;
 	});
 };
-window.onload = () => {
-	localStorage.setItem('lang', 'ar');
-};
-translateContent();
+
+document.addEventListener('DOMContentLoaded', () => {
+	if (localStorage.length === 0) {
+		localStorage.setItem('lang', 'ar');
+	}
+	translateContent();
+});
 
 const toggleMenu = () => {
 	navbar.classList.toggle('active');
@@ -227,7 +230,6 @@ const setServicesCards = () => {
 		`;
 	});
 	servicesContainer.innerHTML = html;
-	translateContent();
 };
 
 const setProducts = (container, cardsNo = 4) => {
@@ -262,7 +264,6 @@ const setProducts = (container, cardsNo = 4) => {
 		`;
 	});
 	container.innerHTML = html;
-	translateContent();
 };
 
 function setPosts() {
