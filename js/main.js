@@ -4,6 +4,7 @@ import { productsData } from '../data/productsData.js';
 import { postsData } from '../data/postsData.js';
 import { productsTypes } from '../data/productsTypes.js';
 import { getParameterByName, setData } from './helpers.js';
+import { translation } from '../translation/translation.js';
 
 // Navbar Elements
 const menu = document.getElementById('menu');
@@ -16,6 +17,10 @@ const navIcons = document.querySelectorAll('.nav-icon');
 const darkbg = document.querySelector('.dark-bg');
 const closeSideList = document.querySelectorAll('.close-side-list');
 const sideLists = document.querySelectorAll('.side-list');
+const languagesIcon = document.querySelector('.languages-icon svg');
+const languagesList = document.querySelector('.languages');
+const languagesBtns = document.querySelectorAll('.languages button');
+
 // Form Elements
 const termsAndConditionsCheckbox = document.getElementById(
 	'terms_and_conditions'
@@ -87,6 +92,19 @@ const toggleCheckbox = (e) => {
 	}
 };
 
+const translateContent = () => {
+	const currentLanguage = localStorage.getItem('lang');
+	document.dir = currentLanguage === 'en' ? 'ltr' : 'rtl';
+	const elements = document.querySelectorAll('[data-i18n]');
+	elements.forEach((element) => {
+		let theKey = element.getAttribute('data-i18n');
+		element.textContent =
+			translation[currentLanguage][theKey] || element.textContent;
+	});
+};
+
+translateContent();
+
 const toggleMenu = () => {
 	navbar.classList.toggle('active');
 };
@@ -94,6 +112,18 @@ const toggleMenu = () => {
 const toggleServicesList = () => {
 	servicesList.classList.toggle('active');
 };
+
+const toggleLanguagesList = () => {
+	languagesList.classList.toggle('active');
+};
+
+languagesBtns.forEach((btn) => {
+	btn.onclick = () => {
+		localStorage.setItem('lang', btn.getAttribute('id'));
+		languagesList.classList.remove('active');
+		translateContent();
+	};
+});
 
 const setServicesListContent = () => {
 	let html = '';
@@ -194,6 +224,7 @@ const setServicesCards = () => {
 		`;
 	});
 	servicesContainer.innerHTML = html;
+	translateContent();
 };
 
 const setProducts = (container, cardsNo = 4) => {
@@ -228,6 +259,7 @@ const setProducts = (container, cardsNo = 4) => {
 		`;
 	});
 	container.innerHTML = html;
+	translateContent();
 };
 
 const setPosts = () => {
@@ -461,7 +493,7 @@ if (closeSideList) {
 		};
 	});
 }
-console.log(sideLists);
+
 if (darkbg) {
 	darkbg.onclick = () => {
 		darkbg.classList.remove('active');
@@ -491,6 +523,9 @@ if (ItemContent && ItemTitle) {
 			showItemContent(index);
 		};
 	});
+}
+if (languagesIcon && languagesList) {
+	languagesIcon.addEventListener('click', toggleLanguagesList);
 }
 if (typesContainer) setTypes();
 if (filterIcon) filterIcon.addEventListener('click', toggleSidebar);
