@@ -293,8 +293,12 @@ const minTooltip = document.querySelector('.min-tooltip');
 const maxTooltip = document.querySelector('.max-tooltip');
 const minGap = 1500;
 const range = document.querySelector('.slider-track');
-const sliderMinValue = parseInt(minVal.min);
-const sliderMaxValue = parseInt(maxVal.max);
+let sliderMinValue;
+let sliderMaxValue;
+if (minVal && maxVal) {
+	sliderMinValue = parseInt(minVal.min);
+	sliderMaxValue = parseInt(maxVal.max);
+}
 
 function slideMin() {
 	let gap = parseInt(maxVal.value) - parseInt(minVal.value);
