@@ -11,7 +11,10 @@ const closeMenu = document.getElementById('close-menu');
 const navbar = document.querySelector('.navbar');
 const servicesBtn = document.querySelector('.services-button');
 const servicesList = document.querySelector('.services-list');
-
+const services = document.querySelector('.services');
+const navIcons = document.querySelectorAll('.nav-icon');
+const closeSideList = document.querySelectorAll('.close-side-list');
+const sideLists = document.querySelectorAll('.side-list');
 // Form Elements
 const termsAndConditionsCheckbox = document.getElementById(
 	'terms_and_conditions'
@@ -89,6 +92,16 @@ const toggleMenu = () => {
 
 const toggleServicesList = () => {
 	servicesList.classList.toggle('active');
+};
+
+const setServicesListContent = () => {
+	let html = '';
+	servicesData.map((service) => {
+		html += `
+			<li> <a href='./services.html?id=${service.id}'>${service.name}</a></li>
+		`;
+	});
+	services.innerHTML = html;
 };
 
 const setCarouselImages = () => {
@@ -465,6 +478,21 @@ const showContactInformation = () => {
 if (navbar) menu.addEventListener('click', toggleMenu);
 if (navbar) closeMenu.addEventListener('click', toggleMenu);
 if (servicesList) servicesBtn.addEventListener('click', toggleServicesList);
+if (services) setServicesListContent();
+if (navIcons) {
+	navIcons.forEach((icon, i) => {
+		icon.onclick = () => {
+			sideLists[i].classList.toggle('active');
+		};
+	});
+}
+if (closeSideList) {
+	closeSideList.forEach((el, i) => {
+		el.onclick = () => {
+			sideLists[i].classList.toggle('active');
+		};
+	});
+}
 if (styledCheckbox) styledCheckbox.addEventListener('click', toggleCheckbox);
 if (termsAndConditionsLabel)
 	termsAndConditionsLabel.addEventListener('click', toggleCheckbox);
