@@ -13,6 +13,7 @@ const servicesBtn = document.querySelector('.services-button');
 const servicesList = document.querySelector('.services-list');
 const services = document.querySelector('.services');
 const navIcons = document.querySelectorAll('.nav-icon');
+const darkbg = document.querySelector('.dark-bg');
 const closeSideList = document.querySelectorAll('.close-side-list');
 const sideLists = document.querySelectorAll('.side-list');
 // Form Elements
@@ -447,6 +448,7 @@ if (services) setServicesListContent();
 if (navIcons) {
 	navIcons.forEach((icon, i) => {
 		icon.onclick = () => {
+			darkbg.classList.toggle('active');
 			sideLists[i].classList.toggle('active');
 		};
 	});
@@ -454,9 +456,21 @@ if (navIcons) {
 if (closeSideList) {
 	closeSideList.forEach((el, i) => {
 		el.onclick = () => {
+			darkbg.classList.toggle('active');
 			sideLists[i].classList.toggle('active');
 		};
 	});
+}
+console.log(sideLists);
+if (darkbg) {
+	darkbg.onclick = () => {
+		darkbg.classList.remove('active');
+		sideLists.forEach((list) => {
+			if (list.classList.contains('active')) {
+				list.classList.remove('active');
+			}
+		});
+	};
 }
 if (styledCheckbox) styledCheckbox.addEventListener('click', toggleCheckbox);
 if (termsAndConditionsLabel)
