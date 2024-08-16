@@ -1,3 +1,5 @@
+import { translateContent } from './main.js';
+
 export function getParameterByName(name, url = window.location.href) {
 	name = name.replace(/[\[\]]/g, '\\$&');
 	let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
@@ -61,7 +63,7 @@ export const setServicesTypes = (types, serviceId, container) => {
 									</p>
 									<div class="d-flex gap-3 align-items-center">
 										<a href='./service_book.html?serviceId=${serviceId}&serviceTypeId=${service.id}'
-											class="circular-button circular-button-primary fw-normal fs-6 no-hover px-4">
+											class="circular-button circular-button-primary fw-normal fs-6 no-hover px-4" data-i18n="book">
 											حجز
 										</a>
 										<div
@@ -91,5 +93,6 @@ export const setServicesTypes = (types, serviceId, container) => {
 						</div>
 		`;
 		container.innerHTML = html;
+		translateContent();
 	});
 };

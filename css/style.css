@@ -86,6 +86,12 @@ nav {
 /* End General Styling */
 
 /* Start Reusable styles */
+[dir='ltr'] .arrow-icon {
+	transform: rotateY(180deg);
+}
+[dir='rtl'] .arrow-icon {
+	transform: unset;
+}
 .background-secondary {
 	background-color: #fafafa;
 }
@@ -207,11 +213,17 @@ nav {
 	/* transform: translateX(-50%); */
 	background-color: var(--bg-color);
 	z-index: 99;
-	width: 200%;
-	box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.25);
+	width: 235%;
+	box-shadow: 0 0 17px -5px rgba(0, 0, 0, 0.25);
 	transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-
+.services li {
+	width: 100%;
+}
+.services li a {
+	display: block;
+	width: 100%;
+}
 .languages {
 	width: 200px;
 	right: 50%;
@@ -249,8 +261,11 @@ nav {
 .services li {
 	transition: all 0.2s linear;
 }
-.services li:hover {
+[dir='rtl'] .services li:hover {
 	margin-right: 0.7rem;
+}
+[dir='ltr'] .services li:hover {
+	margin-left: 0.7rem;
 }
 .nav-icon {
 	cursor: pointer;
@@ -298,6 +313,15 @@ nav {
 /* Start Form Elements */
 .form-container {
 	width: 30%;
+}
+
+[dir='rtl'] #phone_number {
+	direction: ltr;
+	text-align: end;
+}
+[dir='ltr'] #phone_number {
+	direction: unset;
+	text-align: unset;
 }
 
 form .input-group {
@@ -600,7 +624,17 @@ footer div div:last-child ul li {
 	position: relative;
 	padding: 0 3rem;
 }
-footer div div:last-child ul li:not(:last-child)::before {
+[dir='rtl'] footer div div:last-child ul li:not(:last-child)::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1px;
+	height: 10px;
+	background-color: var(--bg-color);
+}
+[dir='ltr'] footer div div:last-child ul li:not(:first-child)::before {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -1354,10 +1388,10 @@ button.tag {
 .order-status .status-buttons button {
 	padding-bottom: 1.5rem;
 	color: var(--text-color);
-	font-weight: 700;
 }
 .order-status .status-buttons button.active {
 	border-bottom: 2px solid var(--primary);
+	font-weight: 700;
 }
 .status-details {
 	padding: 1.25rem 1.5rem;

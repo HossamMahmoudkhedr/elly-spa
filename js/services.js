@@ -1,9 +1,9 @@
 import { servicesData } from '../data/servicesData.js';
 import { getParameterByName } from './helpers.js';
+import { translateContent } from './main.js';
 
 const id = getParameterByName('id');
 const currentService = servicesData.filter((service) => service.id == id)[0];
-console.log(currentService);
 
 // Services Elements
 const ServiceTypesContainer = document.querySelector('.service-types');
@@ -30,7 +30,7 @@ const setServicesTypes = () => {
 									</p>
 									<div class="d-flex gap-3 align-items-center">
 										<a href='./service_book.html?serviceId=${currentService.id}&serviceTypeId=${service.id}'
-											class="circular-button circular-button-primary fw-normal fs-6 no-hover px-4">
+											class="circular-button circular-button-primary fw-normal fs-6 no-hover px-4" data-i18n="book">
 											حجز
 										</a>
 										<div
@@ -60,6 +60,7 @@ const setServicesTypes = () => {
 						</div>
 		`;
 		ServiceTypesContainer.innerHTML = html;
+		translateContent();
 	});
 };
 

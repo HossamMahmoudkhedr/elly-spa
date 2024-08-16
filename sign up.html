@@ -48,7 +48,7 @@
 								id="name"
 								name="name"
 								type="text"
-								data-i18n="name"
+								data-i18n="enter_name"
 								class=""
 								placeholder="ادخل الاسم" />
 						</div>
@@ -75,10 +75,7 @@
 							<input
 								id="phone_number"
 								name="phone_number"
-								data-i18n="phone_number"
 								type="text"
-								dir="ltr"
-								class="text-end"
 								placeholder="+966 XXX XXXX XXX" />
 						</div>
 						<div class="d-flex gap-2 align-items-center">
@@ -118,15 +115,19 @@
 							data-i18n="create_account">
 							إنشاء حساب
 						</button>
-						<p data-i18n="already_have_account">
-							لديك حساب بالفعل؟
-							<a
-								data-i18n="login"
-								href="#"
-								class="text-primary"
-								>تسجيل الدخول</a
-							>
-						</p>
+						<div class="d-flex align-items-center gap-1">
+							<div class="d-block">
+								<p data-i18n="already_have_account">لديك حساب بالفعل؟</p>
+							</div>
+							<div class="d-block">
+								<a
+									href="#"
+									class="text-primary text-decoration-underline"
+									data-i18n="login">
+									تسجيل الدخول
+								</a>
+							</div>
+						</div>
 						<div class="divider-container position-relative">
 							<p
 								data-i18n="or"
@@ -136,9 +137,7 @@
 							<hr />
 						</div>
 						<button
-							class="google-button"
-							data-i18n="create-account-with-google">
-							انشاء حساب بجوجل
+							class="google-button d-flex align-items-center gap-1 justify-content-center">
 							<span
 								><svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -161,6 +160,7 @@
 										d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
 								</svg>
 							</span>
+							<p data-i18n="create_account_with_google">انشاء حساب بجوجل</p>
 						</button>
 					</form>
 				</div>

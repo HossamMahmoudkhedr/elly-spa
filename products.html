@@ -56,8 +56,8 @@
 					<li class="services-button">
 						<a
 							href="#"
-							data-i18n="services"
-							>الخدمات
+							class="d-flex align-items-center gap-2">
+							<p data-i18n="services">الخدمات</p>
 							<span
 								><svg
 									width="16"
@@ -141,6 +141,41 @@
 						</li>
 					</ul>
 					<ul class="d-flex align-items-center gap-4">
+						<li class="languages-icon">
+							<svg
+								class="cursor-pointer"
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								class="bi bi-globe-americas"
+								viewBox="0 0 16 16">
+								<path
+									d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z" />
+							</svg>
+							<div class="languages">
+								<button id="ar">
+									<p data-i18n="arabic">اللغة العربية</p>
+									<span
+										><img
+											width="100%"
+											height="100%"
+											src="https://www.worldometers.info/img/flags/sa-flag.gif"
+											alt=""
+									/></span>
+								</button>
+								<button id="en">
+									<p data-i18n="english">اللغة الانجليزية</p>
+									<span
+										><img
+											width="100%"
+											height="100%"
+											src="https://www.worldometers.info/img/flags/uk-flag.gif"
+											alt=""
+									/></span>
+								</button>
+							</div>
+						</li>
 						<li>
 							<svg
 								class="nav-icon"
@@ -171,18 +206,26 @@
 												fill="black" />
 										</svg>
 									</span>
-									<p class="fw-bold fs-5">حساب المستخدم</p>
+									<p
+										class="fw-bold fs-5"
+										data-i18n="account">
+										حساب المستخدم
+									</p>
 								</div>
 								<ul class="d-flex flex-column align-items-center gap-4">
 									<li>
-										<a href="#">تسجيل الدخول</a>
+										<a
+											href="#"
+											data-i18n="login"
+											>تسجيل الدخول</a
+										>
 									</li>
 								</ul>
 							</div>
 						</li>
-						<li>
+						<li class="d-none d-lg-block">
 							<svg
-								class="nav-icon d-none d-lg-block"
+								class="nav-icon"
 								width="14"
 								height="18"
 								viewBox="0 0 14 18"
@@ -212,7 +255,11 @@
 														fill="black" />
 												</svg>
 											</span>
-											<p class="fw-bold fs-5">عربة التسوق</p>
+											<p
+												class="fw-bold fs-5"
+												data-i18n="shopping_cart">
+												عربة التسوق
+											</p>
 										</div>
 										<ul
 											class="d-flex flex-column align-items-center gap-4 mt-4">
@@ -275,11 +322,17 @@
 									class="d-flex flex-column align-items-center gap-4 w-100 px-3 py-4">
 									<div
 										class="d-flex justify-content-between align-items-center w-100">
-										<p class="fw-bold fs-4">المجموع الكلي</p>
+										<p
+											class="fw-bold fs-4"
+											data-i18n="total_price"
+											="">
+											المجموع الكلي
+										</p>
 										<p class="fw-bold fs-5">30 ر.س</p>
 									</div>
 									<button
-										class="circular-button circular-button-primary no-hover w-100">
+										class="circular-button circular-button-primary no-hover w-100"
+										data-i18n="pay_now">
 										ادفع الان
 									</button>
 								</div>
@@ -314,7 +367,11 @@
 												fill="black" />
 										</svg>
 									</span>
-									<p class="fw-bold fs-5">المفضلة</p>
+									<p
+										class="fw-bold fs-5"
+										data-i18n="favourite">
+										المفضلة
+									</p>
 								</div>
 								<ul class="d-flex flex-column align-items-center gap-4">
 									<li class="w-100 px-3">
@@ -393,7 +450,11 @@
 												fill="black" />
 										</svg>
 									</span>
-									<p class="fw-bold fs-5">عربة التسوق</p>
+									<p
+										class="fw-bold fs-5"
+										data-i18n="shopping_cart">
+										عربة التسوق
+									</p>
 								</div>
 								<ul class="d-flex flex-column align-items-center gap-4 mt-4">
 									<li class="w-100 px-3">
@@ -430,7 +491,11 @@
 							class="d-flex flex-column align-items-center gap-4 w-100 px-3 py-4">
 							<div
 								class="d-flex justify-content-between align-items-center w-100">
-								<p class="fw-bold fs-4">المجموع الكلي</p>
+								<p
+									class="fw-bold fs-4"
+									data-i18n="total_price">
+									المجموع الكلي
+								</p>
 								<p class="fw-bold fs-5">30 ر.س</p>
 							</div>
 							<button
@@ -446,12 +511,12 @@
 		<div class="container-xxl">
 			<!-- Start Header -->
 			<header class="mt-4">
-				<h1>المنتجات</h1>
+				<h1 data-i18n="products">المنتجات</h1>
 			</header>
 			<!-- End Header -->
 
 			<!-- Start Content -->
-			<div class="d-flex my-4">
+			<div class="d-flex my-4 gap-5">
 				<!-- Start Sidebar -->
 
 				<div class="sidebar">
@@ -463,7 +528,11 @@
 								<div class="item-title">
 									<div
 										class="d-lg-none d-flex justify-content-between w-100 align-items-center">
-										<p class="fs-1 fw-bold">التصنيف</p>
+										<p
+											class="fs-1 fw-bold"
+											data-i18n="category">
+											التصنيف
+										</p>
 										<span class="close-filter">
 											<svg
 												width="35"
@@ -490,7 +559,7 @@
 													fill="#231F1E" />
 											</svg>
 										</span>
-										<p>التصنيف</p>
+										<p data-i18n="category">التصنيف</p>
 									</div>
 									<span class="arrow-down-icon cursor-pointer"
 										><svg
@@ -521,7 +590,7 @@
 															fill="#231F1E" />
 													</svg>
 												</span>
-												<p>النوع</p>
+												<p data-i18n="type">النوع</p>
 											</div>
 											<span class="arrow-down-icon cursor-pointer"
 												><svg
@@ -555,7 +624,7 @@
 															fill="#231F1E" />
 													</svg>
 												</span>
-												<p>السعر</p>
+												<p data-i18n="price">السعر</p>
 											</div>
 											<span class="arrow-down-icon cursor-pointer"
 												><svg
@@ -596,7 +665,11 @@
 													<div class="input-box">
 														<div class="min-box">
 															<div class="input-wrap">
-																<span class="input-addon d-none">ر.س</span>
+																<span
+																	class="input-addon d-none"
+																	data-i18n="sar"
+																	>ر.س</span
+																>
 																<input
 																	hidden
 																	type="text"
@@ -606,7 +679,11 @@
 														</div>
 														<div class="max-box">
 															<div class="input-wrap">
-																<span class="input-addon d-none">ر.س</span>
+																<span
+																	class="input-addon d-none"
+																	data-i18n="sar"
+																	>ر.س</span
+																>
 																<input
 																	hidden
 																	type="text"
@@ -626,7 +703,7 @@
 				</div>
 				<!-- End Sidebar -->
 				<!-- Start Products Section -->
-				<div class="products pe-lg-5">
+				<div class="products">
 					<div class="d-flex flex-column gap-4">
 						<div
 							class="d-flex flex-column-reverse flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
@@ -640,7 +717,7 @@
 									<div>
 										<p
 											class="tag-name"
-											data-i18n="filter_type">
+											data-i18n="type">
 											النوع:
 										</p>
 										<p
@@ -666,7 +743,7 @@
 									<div>
 										<p
 											class="tag-name"
-											data-i18n="filter_price">
+											data-i18n="price">
 											السعر:
 										</p>
 										<p class="tag-value">
@@ -704,6 +781,7 @@
 									</span>
 									<input
 										type="text"
+										data-i18n="search_for_product"
 										placeholder="بحث عن منتج" />
 									<span
 										id="filter-icon"
@@ -726,13 +804,13 @@
 										name="showed-products"
 										id="showed-products">
 										<option
-											value="newest"
-											data-i18n="newest">
+											value="recent"
+											data-i18n="recent">
 											الاحدث
 										</option>
 										<option
-											value="oldest"
-											data-i18n="oldest">
+											value="older"
+											data-i18n="older">
 											الاقدم
 										</option>
 									</select>
@@ -900,7 +978,7 @@
 								>المنتجات</a
 							>
 						</li>
-						<li class="ps-0 p-sm-3">
+						<li class="p-sm-3">
 							<a
 								href="#"
 								data-i18n="offers"
@@ -931,7 +1009,7 @@
 							>
 						</li>
 					</ul>
-					<p>
+					<p data-i18n="footer_content">
 						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
 						officiis voluptatibus eveniet beatae et ipsum animi cumque, veniam
 						facere quod eligendi ea optio, doloremque perferendis ex quae quis

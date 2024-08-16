@@ -56,8 +56,8 @@
 					<li class="services-button">
 						<a
 							href="#"
-							data-i18n="services"
-							>الخدمات
+							class="d-flex align-items-center gap-2">
+							<p data-i18n="services">الخدمات</p>
 							<span
 								><svg
 									width="16"
@@ -141,6 +141,41 @@
 						</li>
 					</ul>
 					<ul class="d-flex align-items-center gap-4">
+						<li class="languages-icon">
+							<svg
+								class="cursor-pointer"
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								class="bi bi-globe-americas"
+								viewBox="0 0 16 16">
+								<path
+									d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z" />
+							</svg>
+							<div class="languages">
+								<button id="ar">
+									<p data-i18n="arabic">اللغة العربية</p>
+									<span
+										><img
+											width="100%"
+											height="100%"
+											src="https://www.worldometers.info/img/flags/sa-flag.gif"
+											alt=""
+									/></span>
+								</button>
+								<button id="en">
+									<p data-i18n="english">اللغة الانجليزية</p>
+									<span
+										><img
+											width="100%"
+											height="100%"
+											src="https://www.worldometers.info/img/flags/uk-flag.gif"
+											alt=""
+									/></span>
+								</button>
+							</div>
+						</li>
 						<li>
 							<svg
 								class="nav-icon"
@@ -171,18 +206,26 @@
 												fill="black" />
 										</svg>
 									</span>
-									<p class="fw-bold fs-5">حساب المستخدم</p>
+									<p
+										class="fw-bold fs-5"
+										data-i18n="account">
+										حساب المستخدم
+									</p>
 								</div>
 								<ul class="d-flex flex-column align-items-center gap-4">
 									<li>
-										<a href="#">تسجيل الدخول</a>
+										<a
+											href="#"
+											data-i18n="login"
+											>تسجيل الدخول</a
+										>
 									</li>
 								</ul>
 							</div>
 						</li>
-						<li>
+						<li class="d-none d-lg-block">
 							<svg
-								class="nav-icon d-none d-lg-block"
+								class="nav-icon"
 								width="14"
 								height="18"
 								viewBox="0 0 14 18"
@@ -212,7 +255,11 @@
 														fill="black" />
 												</svg>
 											</span>
-											<p class="fw-bold fs-5">عربة التسوق</p>
+											<p
+												class="fw-bold fs-5"
+												data-i18n="shopping_cart">
+												عربة التسوق
+											</p>
 										</div>
 										<ul
 											class="d-flex flex-column align-items-center gap-4 mt-4">
@@ -275,11 +322,17 @@
 									class="d-flex flex-column align-items-center gap-4 w-100 px-3 py-4">
 									<div
 										class="d-flex justify-content-between align-items-center w-100">
-										<p class="fw-bold fs-4">المجموع الكلي</p>
+										<p
+											class="fw-bold fs-4"
+											data-i18n="total_price"
+											="">
+											المجموع الكلي
+										</p>
 										<p class="fw-bold fs-5">30 ر.س</p>
 									</div>
 									<button
-										class="circular-button circular-button-primary no-hover w-100">
+										class="circular-button circular-button-primary no-hover w-100"
+										data-i18n="pay_now">
 										ادفع الان
 									</button>
 								</div>
@@ -314,7 +367,11 @@
 												fill="black" />
 										</svg>
 									</span>
-									<p class="fw-bold fs-5">المفضلة</p>
+									<p
+										class="fw-bold fs-5"
+										data-i18n="favourite">
+										المفضلة
+									</p>
 								</div>
 								<ul class="d-flex flex-column align-items-center gap-4">
 									<li class="w-100 px-3">
@@ -393,7 +450,11 @@
 												fill="black" />
 										</svg>
 									</span>
-									<p class="fw-bold fs-5">عربة التسوق</p>
+									<p
+										class="fw-bold fs-5"
+										data-i18n="shopping_cart">
+										عربة التسوق
+									</p>
 								</div>
 								<ul class="d-flex flex-column align-items-center gap-4 mt-4">
 									<li class="w-100 px-3">
@@ -430,7 +491,11 @@
 							class="d-flex flex-column align-items-center gap-4 w-100 px-3 py-4">
 							<div
 								class="d-flex justify-content-between align-items-center w-100">
-								<p class="fw-bold fs-4">المجموع الكلي</p>
+								<p
+									class="fw-bold fs-4"
+									data-i18n="total_price">
+									المجموع الكلي
+								</p>
 								<p class="fw-bold fs-5">30 ر.س</p>
 							</div>
 							<button
@@ -542,7 +607,8 @@
 							<div
 								class="no-of-rates text-black-50"
 								id="product-rate-number">
-								(<span id="number-of-rates"></span>) مراجعة
+								(<span id="number-of-rates"></span>)
+								<span data-i18n="review">مراجعة</span>
 							</div>
 						</div>
 					</div>
@@ -557,21 +623,28 @@
 					<div
 						class="d-flex flex-column flex-lg-row gap-3 gap-lg-4 align-items-lg-center">
 						<button class="square-button size-button selected">
-							<p>50 مل</p>
+							<p>
+								50
+								<span data-i18n="ml"> مل </span>
+							</p>
 							<p data-i18n="small_size">الحجم الصغير</p>
 						</button>
 						<button class="square-button size-button">
-							<p>150 مل</p>
+							<p>150 <span data-i18n="ml"> مل </span></p>
 							<p data-i18n="medium_size">الحجم المتوسط</p>
 						</button>
 						<button class="square-button size-button">
-							<p>250 مل</p>
+							<p>250 <span data-i18n="ml"> مل </span></p>
 							<p data-i18n="large_size">الحجم الكبير</p>
 						</button>
 					</div>
 				</div>
 				<div class="shop-buttons">
-					<button class="square-button square-button-primary">شراء الأن</button>
+					<button
+						class="square-button square-button-primary"
+						data-i18n="buy_now">
+						شراء الأن
+					</button>
 					<button class="square-button square-button-secondary">
 						<span
 							><svg
@@ -583,8 +656,9 @@
 								<path
 									d="M12.8333 4.83317H10.3333V3.99984C10.3333 3.11578 9.98212 2.26794 9.357 1.64281C8.73188 1.01769 7.88403 0.666504 6.99998 0.666504C6.11592 0.666504 5.26808 1.01769 4.64296 1.64281C4.01784 2.26794 3.66665 3.11578 3.66665 3.99984V4.83317H1.16665C0.945633 4.83317 0.733671 4.92097 0.577391 5.07725C0.421111 5.23353 0.333313 5.44549 0.333313 5.6665V14.8332C0.333313 15.4962 0.596705 16.1321 1.06555 16.6009C1.53439 17.0698 2.17027 17.3332 2.83331 17.3332H11.1666C11.8297 17.3332 12.4656 17.0698 12.9344 16.6009C13.4033 16.1321 13.6666 15.4962 13.6666 14.8332V5.6665C13.6666 5.44549 13.5788 5.23353 13.4226 5.07725C13.2663 4.92097 13.0543 4.83317 12.8333 4.83317ZM5.33331 3.99984C5.33331 3.55781 5.50891 3.13389 5.82147 2.82133C6.13403 2.50877 6.55795 2.33317 6.99998 2.33317C7.44201 2.33317 7.86593 2.50877 8.17849 2.82133C8.49105 3.13389 8.66665 3.55781 8.66665 3.99984V4.83317H5.33331V3.99984ZM12 14.8332C12 15.0542 11.9122 15.2661 11.7559 15.4224C11.5996 15.5787 11.3877 15.6665 11.1666 15.6665H2.83331C2.6123 15.6665 2.40034 15.5787 2.24406 15.4224C2.08778 15.2661 1.99998 15.0542 1.99998 14.8332V6.49984H3.66665V7.33317C3.66665 7.55418 3.75444 7.76615 3.91072 7.92243C4.067 8.07871 4.27897 8.1665 4.49998 8.1665C4.72099 8.1665 4.93295 8.07871 5.08923 7.92243C5.24552 7.76615 5.33331 7.55418 5.33331 7.33317V6.49984H8.66665V7.33317C8.66665 7.55418 8.75444 7.76615 8.91072 7.92243C9.067 8.07871 9.27897 8.1665 9.49998 8.1665C9.72099 8.1665 9.93295 8.07871 10.0892 7.92243C10.2455 7.76615 10.3333 7.55418 10.3333 7.33317V6.49984H12V14.8332Z"
 									fill="#231F1E" />
-							</svg> </span
-						>إضافة الي عربة التسوق
+							</svg>
+						</span>
+						<span data-i18n="add_to_cart"> إضافة الي عربة التسوق </span>
 					</button>
 
 					<button class="d-none d-lg-block add-to-favourites favourite-icon">
@@ -604,7 +678,7 @@
 					<div class="item">
 						<div class="item-title">
 							<div>
-								<p>طريقة الاستخدام</p>
+								<p data-i18n="usage">طريقة الاستخدام</p>
 							</div>
 							<span class="arrow-down-icon cursor-pointer"
 								><svg
@@ -627,7 +701,7 @@
 					<div class="item">
 						<div class="item-title">
 							<div>
-								<p>المكونات</p>
+								<p data-i18n="ingredients">المكونات</p>
 							</div>
 							<span class="arrow-down-icon cursor-pointer"
 								><svg
@@ -814,7 +888,7 @@
 								>المنتجات</a
 							>
 						</li>
-						<li class="ps-0 p-sm-3">
+						<li class="p-sm-3">
 							<a
 								href="#"
 								data-i18n="offers"
@@ -845,7 +919,7 @@
 							>
 						</li>
 					</ul>
-					<p>
+					<p data-i18n="footer_content">
 						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
 						officiis voluptatibus eveniet beatae et ipsum animi cumque, veniam
 						facere quod eligendi ea optio, doloremque perferendis ex quae quis

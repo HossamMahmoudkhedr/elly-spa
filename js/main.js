@@ -92,7 +92,7 @@ const toggleCheckbox = (e) => {
 	}
 };
 
-const translateContent = () => {
+export const translateContent = () => {
 	const currentLanguage = localStorage.getItem('lang');
 	document.dir = currentLanguage === 'en' ? 'ltr' : 'rtl';
 	const elements = document.querySelectorAll('[data-i18n]');
@@ -101,6 +101,9 @@ const translateContent = () => {
 		element.textContent = translation[currentLanguage][theKey]
 			? translation[currentLanguage][theKey]
 			: element.textContent;
+		if (element.hasAttribute('placeholder')) {
+			element.setAttribute('placeholder', translation[currentLanguage][theKey]);
+		}
 	});
 };
 
@@ -344,8 +347,9 @@ function slideMin() {
 	if (gap <= minGap) {
 		minVal.value = parseInt(maxVal.value) - minGap;
 	}
-	minTooltip.innerHTML = `<p>ر.س</p><p>${minVal.value}</p>`;
+	minTooltip.innerHTML = `<p data-i18n="sar">ر.س</p><p>${minVal.value}</p>`;
 	priceInputMin.value = minVal.value;
+	translateContent();
 	setArea();
 }
 
@@ -354,8 +358,9 @@ function slideMax() {
 	if (gap <= minGap) {
 		minVal.value = parseInt(minVal.value) - minGap;
 	}
-	maxTooltip.innerHTML = `<p>ر.س</p><p>${maxVal.value}</p>`;
+	maxTooltip.innerHTML = `<p  data-i18n="sar">ر.س</p><p>${maxVal.value}</p>`;
 	priceInputMax.value = maxVal.value;
+	translateContent();
 	setArea();
 }
 
@@ -474,7 +479,7 @@ const showContactInformation = () => {
 	contactInformation.classList.add('active');
 	orderInformation.classList.remove('active');
 	mode = 'pay';
-	next.textContent = 'دفع';
+	next.textContent = localStorage.getItem('lang') === 'en' ? 'Pay' : 'دفع';
 };
 
 if (navbar) menu.addEventListener('click', toggleMenu);
